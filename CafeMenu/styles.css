@@ -1,0 +1,82 @@
+/*
+    Cafe beans image : https: //cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg
+
+    properties learned : 
+        `text-align` ->position the text element. 
+        `background-color` ->change the background color of the element. 
+        `width` ->change the width of an element. 
+        `margin`, `margin-top`, `margin-botton`, `margin-left`, `margin-right` ->like invisible space around the element. 
+        `background-image` ->add an image in the background. 
+        `display` ->change to inline-level or block-level element. 
+        `padding`, `padding-top`, `padding-botton`, `padding-right`, `padding-left` ->like invisible space inside the element. 
+        `max-width` ->set the maximal width that the element will ever take. 
+        `font-family` ->change the font family of the text. 
+        `font-style` ->change the style of the text. 
+        `font-size` ->change the size of the text.
+
+    roles :
+        Type selector element {
+            property: value;
+        }
+
+        List of selector when many elements have the exact same style. selector1,
+        selector2 {
+            property: value;
+        }
+
+        Id selector #id-name {
+            property: value;
+        }
+
+        Class selector .class-name {
+            property: value;
+        }
+*/
+
+body {
+    background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+    font-family: sans-serif;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: Impact, serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.established {
+    font-style: italic;
+}
+
+.menu {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 80%;
+    background-color: burlywood;
+}
+
+.item p{
+    display: inline-block;
+}
+
+.coffee, .dessert {
+    width:75%;
+    text-align: left;
+}
+
+.price{
+    width: 25%;
+    text-align: right;
+}
