@@ -13,8 +13,15 @@
         `font-family` ->change the font family of the text. 
         `font-style` ->change the style of the text. 
         `font-size` ->change the size of the text.
+        `height` -> change the height of an element.
+        `border-color` -> change the color of edges of any element.
+        `color` -> set the color of an element.
 
     roles :
+        Speudo-selector
+        a:visited {
+            property : value;
+        }
         Type selector element {
             property: value;
         }
@@ -36,6 +43,7 @@
 body {
     background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
     font-family: sans-serif;
+    padding: 30px;
 }
 
 h1, h2, p {
@@ -48,6 +56,8 @@ h1, h2 {
 
 h1 {
     font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -65,10 +75,14 @@ h2 {
     padding: 20px;
     width: 80%;
     background-color: burlywood;
+    border-radius: 20px;
 }
 
 .item p{
     display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
 }
 
 .coffee, .dessert {
@@ -79,4 +93,33 @@ h2 {
 .price{
     width: 25%;
     text-align: right;
+}
+
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+a {
+    color: black;
+}
+
+a:hover{
+    color: brown;
+}
+
+img {
+    display: block; /* img element is like inline element, so we must make it block element. */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+.aa {
+    margin-top: 25px;
 }
