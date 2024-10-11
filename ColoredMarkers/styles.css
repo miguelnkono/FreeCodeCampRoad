@@ -1,0 +1,27 @@
+/**
+Notes : 
+    When shorthand `margin` property has two values, it sets `margin-top` and `margin-bottom`
+    to the first value, and `margin-left` `margin-right` to the second value.
+*/
+
+h1 {
+    text-align: center;
+}
+
+.marker {
+    height: 25px;
+    width: 200px;
+    margin: 10px auto;
+}
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: green;
+}
+
+.three {
+    background-color: blue;
+}
